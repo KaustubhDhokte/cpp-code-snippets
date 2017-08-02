@@ -1,3 +1,5 @@
+//In fact except inline, no other keyword is allowed in the declaration of constructor.
+
 #include<stdio.h>
 
 class DefaultConstructorExample

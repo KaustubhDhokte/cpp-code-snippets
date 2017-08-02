@@ -30,6 +30,24 @@ class Derived_publically : public Base
     public:
     void public_method_derived_publically()
     {
+        private_method_base();
+        /*
+        single_inheritance.cpp: In member function ‘void Derived_publically::public_method_derived_publically()’:
+        single_inheritance.cpp:5:10: error: ‘void Base::private_method_base()’ is private
+        void private_method_base()
+          ^
+        single_inheritance.cpp:33:9: error: within this context
+         private_method_base();
+         ^
+        single_inheritance.cpp:5:10: error: ‘void Base::private_method_base()’ is private
+        void private_method_base()
+          ^
+        single_inheritance.cpp:33:29: error: within this context
+        private_method_base();
+        */
+
+        protected_method_base(); //works well
+
         printf("Public Method of derived publically\n");
     }
 
