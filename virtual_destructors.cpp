@@ -3,7 +3,7 @@
 class Animal
 {
     public:
-    virtual  ~ Animal()
+    virtual ~ Animal()
     {
         printf("Destructor Animal\n");
     }
@@ -38,6 +38,6 @@ int main()
     */
 
     /*
-    Destructor of only Animal is called
+    Destructor of only Animal is called if ~Animal is not virtual
     */
 }
