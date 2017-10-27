@@ -1,4 +1,5 @@
 //http://www.gotw.ca/gotw/009.htm
+//http://cs-fundamentals.com/c-programming/memory-layout-of-c-program-code-data-segments.php
 /*
 Solution
 The following summarizes a C++ program's major distinct memory areas. Note that some of the names (e.g., "heap") do not appear as such in the draft [standard].
