@@ -3,10 +3,18 @@
 class Animal
 {
     public:
-    virtual Animal()
+    /*virtual Animal()
     {
         //virtual_constructors.cpp:6:20: error: constructors cannot be declared virtual        
-    }
+    }*/
+    //virtual Animal() = 0;
+    /*
+    virtual_constructors.cpp:10:24: error: constructors cannot be declared virtual [-fpermissive]
+     virtual Animal() = 0;
+                        ^
+    virtual_constructors.cpp:10:13: error: initializer specified for non-virtual method ‘Animal::Animal()’
+     virtual Animal() = 0;
+    */
 };
 
 class Dog
